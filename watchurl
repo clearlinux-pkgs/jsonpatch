@@ -1,3 +1,3 @@
-# openstack needs version <2.0
-# once they update requirement, we can push >=2.0 versions
-watchurl=https://pypi.python.org/packages/source/j/jsonpatch/jsonpatch-(1[\d\.]*).tar.gz
+# openstack Liberty needs version >= 1.1
+# for more information check https://github.com/openstack/requirements/blob/master/global-requirements.txt
+watchurl=https://pypi.python.org/simple/jsonpatch/ ../../packages/source/j/jsonpatch/jsonpatch-([\d\.]*).tar.gz
