@@ -4,7 +4,7 @@
 #
 Name     : jsonpatch
 Version  : 1.11
-Release  : 13
+Release  : 14
 URL      : https://pypi.python.org/packages/source/j/jsonpatch/jsonpatch-1.11.tar.gz
 Source0  : https://pypi.python.org/packages/source/j/jsonpatch/jsonpatch-1.11.tar.gz
 Summary  : Apply JSON-Patches (RFC 6902)
