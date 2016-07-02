@@ -1,5 +1,5 @@
 PKG_NAME := jsonpatch
-URL := https://pypi.python.org/packages/source/j/jsonpatch/jsonpatch-1.11.tar.gz
+URL := http://pypi.debian.net/jsonpatch/jsonpatch-1.14.tar.gz
 ARCHIVES :=
 
 include ../common/Makefile.common
