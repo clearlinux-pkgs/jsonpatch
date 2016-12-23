@@ -4,7 +4,7 @@
 #
 Name     : jsonpatch
 Version  : 1.14
-Release  : 23
+Release  : 24
 URL      : http://pypi.debian.net/jsonpatch/jsonpatch-1.14.tar.gz
 Source0  : http://pypi.debian.net/jsonpatch/jsonpatch-1.14.tar.gz
 Summary  : Apply JSON-Patches (RFC 6902)
