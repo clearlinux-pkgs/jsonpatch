@@ -4,9 +4,9 @@
 #
 Name     : jsonpatch
 Version  : 1.23
-Release  : 31
-URL      : https://files.pythonhosted.org/packages/9a/7d/bcf203d81939420e1aaf7478a3efce1efb8ccb4d047a33cb85d7f96d775e/jsonpatch-1.23.tar.gz
-Source0  : https://files.pythonhosted.org/packages/9a/7d/bcf203d81939420e1aaf7478a3efce1efb8ccb4d047a33cb85d7f96d775e/jsonpatch-1.23.tar.gz
+Release  : 32
+URL      : http://pypi.debian.net/jsonpatch/jsonpatch-1.23.tar.gz
+Source0  : http://pypi.debian.net/jsonpatch/jsonpatch-1.23.tar.gz
 Summary  : Apply JSON-Patches (RFC 6902)
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -76,7 +76,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1532243352
+export SOURCE_DATE_EPOCH=1532293987
 python3 setup.py build -b py3
 
 %check
