@@ -4,7 +4,7 @@
 #
 Name     : jsonpatch
 Version  : 1.23
-Release  : 30
+Release  : 31
 URL      : https://files.pythonhosted.org/packages/9a/7d/bcf203d81939420e1aaf7478a3efce1efb8ccb4d047a33cb85d7f96d775e/jsonpatch-1.23.tar.gz
 Source0  : https://files.pythonhosted.org/packages/9a/7d/bcf203d81939420e1aaf7478a3efce1efb8ccb4d047a33cb85d7f96d775e/jsonpatch-1.23.tar.gz
 Summary  : Apply JSON-Patches (RFC 6902)
