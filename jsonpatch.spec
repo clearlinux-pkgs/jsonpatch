@@ -4,39 +4,32 @@
 #
 Name     : jsonpatch
 Version  : 1.23
-Release  : 33
+Release  : 34
 URL      : http://pypi.debian.net/jsonpatch/jsonpatch-1.23.tar.gz
 Source0  : http://pypi.debian.net/jsonpatch/jsonpatch-1.23.tar.gz
 Summary  : Apply JSON-Patches (RFC 6902)
 Group    : Development/Tools
 License  : BSD-3-Clause
-Requires: jsonpatch-bin
-Requires: jsonpatch-python3
-Requires: jsonpatch-license
-Requires: jsonpatch-python
+Requires: jsonpatch-bin = %{version}-%{release}
+Requires: jsonpatch-license = %{version}-%{release}
+Requires: jsonpatch-python = %{version}-%{release}
+Requires: jsonpatch-python3 = %{version}-%{release}
 Requires: jsonpointer
 BuildRequires : buildreq-distutils3
 BuildRequires : jsonpointer
-BuildRequires : pbr
-BuildRequires : pip
-BuildRequires : python3-dev
-BuildRequires : setuptools
 
 %description
+python-json-patch
 =================
-        
-        |PyPI version| |Supported Python versions| |Build Status| |Coverage
-        Status|
-        
-        Applying JSON Patches in Python
-        -------------------------------
-        
-        Library to apply JSON Patches according to `RFC
+[![PyPI version](https://img.shields.io/pypi/v/jsonpatch.svg)](https://pypi.python.org/pypi/jsonpatch/)
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/jsonpatch.svg)](https://pypi.python.org/pypi/jsonpatch/)
+[![Build Status](https://travis-ci.org/stefankoegl/python-json-patch.png?branch=master)](https://travis-ci.org/stefankoegl/python-json-patch)
+[![Coverage Status](https://coveralls.io/repos/stefankoegl/python-json-patch/badge.png?branch=master)](https://coveralls.io/r/stefankoegl/python-json-patch?branch=master)
 
 %package bin
 Summary: bin components for the jsonpatch package.
 Group: Binaries
-Requires: jsonpatch-license
+Requires: jsonpatch-license = %{version}-%{release}
 
 %description bin
 bin components for the jsonpatch package.
@@ -53,7 +46,7 @@ license components for the jsonpatch package.
 %package python
 Summary: python components for the jsonpatch package.
 Group: Default
-Requires: jsonpatch-python3
+Requires: jsonpatch-python3 = %{version}-%{release}
 
 %description python
 python components for the jsonpatch package.
@@ -76,8 +69,9 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1532293987
-python3 setup.py build -b py3
+export SOURCE_DATE_EPOCH=1547494007
+export MAKEFLAGS=%{?_smp_mflags}
+python3 setup.py build
 
 %check
 export http_proxy=http://127.0.0.1:9/
@@ -86,9 +80,9 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 python tests.py
 %install
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/jsonpatch
-cp COPYING %{buildroot}/usr/share/doc/jsonpatch/COPYING
-python3 -tt setup.py build -b py3 install --root=%{buildroot}
+mkdir -p %{buildroot}/usr/share/package-licenses/jsonpatch
+cp COPYING %{buildroot}/usr/share/package-licenses/jsonpatch/COPYING
+python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
@@ -98,12 +92,12 @@ echo ----[ mark ]----
 
 %files bin
 %defattr(-,root,root,-)
-/usr/bin/jsondiff
+%exclude /usr/bin/jsondiff
 /usr/bin/jsonpatch
 
 %files license
-%defattr(-,root,root,-)
-/usr/share/doc/jsonpatch/COPYING
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/jsonpatch/COPYING
 
 %files python
 %defattr(-,root,root,-)
