@@ -1,2 +1,5 @@
 # This file contains recursive sources that require this package
+deprecated-warlock
+ironic
+openstacksdk
 warlock
