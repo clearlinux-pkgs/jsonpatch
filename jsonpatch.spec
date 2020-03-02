@@ -4,7 +4,7 @@
 #
 Name     : jsonpatch
 Version  : 1.25
-Release  : 40
+Release  : 41
 URL      : https://files.pythonhosted.org/packages/70/9f/6f0bfbb4cc1401ce994d336bcb4ed2aa924f395e7fd1926511c04a52eee1/jsonpatch-1.25.tar.gz
 Source0  : https://files.pythonhosted.org/packages/70/9f/6f0bfbb4cc1401ce994d336bcb4ed2aa924f395e7fd1926511c04a52eee1/jsonpatch-1.25.tar.gz
 Summary  : Apply JSON-Patches (RFC 6902)
@@ -56,6 +56,7 @@ python components for the jsonpatch package.
 Summary: python3 components for the jsonpatch package.
 Group: Default
 Requires: python3-core
+Provides: pypi(jsonpatch)
 
 %description python3
 python3 components for the jsonpatch package.
@@ -70,7 +71,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1580313294
+export SOURCE_DATE_EPOCH=1583161777
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
