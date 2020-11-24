@@ -1,6 +1,2 @@
 # This file contains recursive sources that require this package
 ceph
-ironic
-openstacksdk
-python-swiftclient
-warlock
