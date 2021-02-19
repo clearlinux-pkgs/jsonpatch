@@ -4,7 +4,7 @@
 #
 Name     : jsonpatch
 Version  : 1.28
-Release  : 49
+Release  : 50
 URL      : https://files.pythonhosted.org/packages/4f/42/c171c0090a5cd8e4b59515b35ac0bcc1a097481a738cadccdaf7aff87094/jsonpatch-1.28.tar.gz
 Source0  : https://files.pythonhosted.org/packages/4f/42/c171c0090a5cd8e4b59515b35ac0bcc1a097481a738cadccdaf7aff87094/jsonpatch-1.28.tar.gz
 Summary  : Apply JSON-Patches (RFC 6902)
