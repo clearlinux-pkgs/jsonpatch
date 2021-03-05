@@ -1,5 +1,5 @@
 PKG_NAME := jsonpatch
-URL = https://files.pythonhosted.org/packages/bb/cd/dd097ce40a56e9f296e923e6884280b33f69cd54c5ed1937e3ff1717104a/jsonpatch-1.30.tar.gz
+URL = https://files.pythonhosted.org/packages/d3/de/55f648d9d76c4d8bddef0dc5f0a3cb9e8f3a56996ce994f9b315dd895cd9/jsonpatch-1.31.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
