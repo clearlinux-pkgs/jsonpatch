@@ -4,7 +4,7 @@
 #
 Name     : jsonpatch
 Version  : 1.32
-Release  : 60
+Release  : 61
 URL      : https://files.pythonhosted.org/packages/21/67/83452af2a6db7c4596d1e2ecaa841b9a900980103013b867f2865e5e1cf0/jsonpatch-1.32.tar.gz
 Source0  : https://files.pythonhosted.org/packages/21/67/83452af2a6db7c4596d1e2ecaa841b9a900980103013b867f2865e5e1cf0/jsonpatch-1.32.tar.gz
 Summary  : Apply JSON-Patches (RFC 6902)
@@ -75,7 +75,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1615817968
+export SOURCE_DATE_EPOCH=1635744639
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
@@ -99,7 +99,7 @@ echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
 ## Remove excluded files
-rm -f %{buildroot}/usr/bin/jsondiff
+rm -f %{buildroot}*/usr/bin/jsondiff
 
 %files
 %defattr(-,root,root,-)
